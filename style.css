@@ -1,0 +1,209 @@
+/* Global styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+#resume-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#resume-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d0d4dc;
+}
+
+/* Form styling */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    border: 1px solid #ccd1da;
+    margin-bottom: 20px;
+    padding: 20px 25px;
+    border-radius: 8px;
+    background-color: #f9fbfc;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #34495e;
+    padding: 0 8px;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccd1da;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9fafc;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#download-pdf,
+#copy-link {
+    width: 48%;
+    margin: 10px 1%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#download-pdf:hover,
+#copy-link:hover {
+    background-color: #27ae60;
+}
+
+/* Output resume section */
+.resume-output>h2 {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#resume-output {
+    margin-top: 40px;
+    padding: 25px;
+    border: 1px solid #ccd1da;
+    border-radius: 10px;
+    background-color: #f4f7fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+#resume-output h2 {
+    text-align: center;
+    color: #87b2dc;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#resume-content h1{
+    font-size: 35px;
+}
+#resume-content h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #0197fa;
+    font-weight: 500;
+}
+
+#resume-content p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Layout and alignment improvements */
+.hidden {
+    display: none;
+}
+
+select, input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], textarea {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    form, #resume-output {
+        padding: 15px;
+    }
+    button, #download-pdf, #copy-link {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
